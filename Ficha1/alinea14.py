@@ -1,0 +1,11 @@
+x = int(input("Tabuada do -> "))
+print(f"{x}x1 = {x} \n"
+      f"{x}x2 = {x*2} \n"
+      f"{x}x3 = {x*3} \n"
+      f"{x}x4 = {x*4} \n"
+      f"{x}x5 = {x*5} \n"
+      f"{x}x6 = {x*6} \n"
+      f"{x}x7 = {x*7} \n"
+      f"{x}x8 = {x*8} \n"
+      f"{x}x9 = {x*9} \n"
+      f"{x}x10 = {x*10} \n")

@@ -1,0 +1,6 @@
+x = float(input("Valor em kms -> "))
+y = float(input("Valor em minutos -> "))
+b = (x/(y/60))
+c = (x*10e3/(y*60))
+print (b,"Km/H")
+print (c, "m/s")

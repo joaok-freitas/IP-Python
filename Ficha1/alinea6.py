@@ -1,0 +1,5 @@
+x = int(input("Valor em segundos -> "))
+days = int(x/60/60/24)
+mins = int(x/60 - days*24*60)
+secs = int(x - days*24*60*60 - mins*60)
+print (days,"Dias", mins, "Minutos", secs, "Segundos")
