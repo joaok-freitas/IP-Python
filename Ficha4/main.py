@@ -30,24 +30,29 @@ def alinea3(tup):
         if tup[i]%2 == 0:
             res += (tup[i]) # n funfa ??
     print (res)
-a = (1,2,3,4,5,6,7,8,9)
 
-def alinea4(tup): # not done
+
+def alinea4(tup):
+    res = ( )
     for i in range (len(tup)):
-        print("idk")
+        res = res + (tup[i],tup[i],)
+    print (res)
 
-def alinea5(tup): # not done
+def alinea5(tup):
     count = 0
     for i in range (len(tup)):
-        if tup[i] == tup[z]:
+        if i+1 < len(tup) and tup[i] == tup[i+1]:
             count += 1
     print (count)
 
+
+#a = (1,2,2,3,4,5,6,7,8,9,9,0)
+a = (1,2,3)
 if __name__ == '__main__':
     #alineaa()
     #alineab()
     #alineac()
     #alinea2()
     #alinea3(a)
-    #alinea4()
-    alinea5(a)
+    alinea4(a)
+    #alinea5(a)
