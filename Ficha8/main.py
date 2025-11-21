@@ -38,7 +38,14 @@ def dicionario_palavras(string):
             dictionary[word] = 1
     return dictionary
 
-#def bib()
+def bib(lista_livros):
+    ano = 5000
+    for livro in lista_livros:
+        for titulo in livro:
+            if livro[titulo][3] < ano:
+                ano = livro[titulo][3]
+                titulo_guardado = titulo
+    return titulo_guardado, ano
 
 #lista = [('a', 8), ('b', 9), ('a', 3)]
 #agrupa_por_chave(lista)
@@ -48,7 +55,9 @@ def dicionario_palavras(string):
 #print(dicionario_palavras("Hello World World Hai"))
 
 
-lista_livros = [{'titulo1':('autor1','editora1','cidade1','1999','paginas1','isbn1')},
-                {'titulo2':('autor1','editora1','cidade1','2024','paginas1','isbn1')},
-                {'titulo3':('autor1','editora1','cidade1','2001','paginas1','isbn1')},
-                {'titulo4':('autor1','editora1','cidade1','2000','paginas1','isbn1')},]
+lista_livros = [{'titulo1':('autor1','editora1','cidade1',1999,'paginas1','isbn1')},
+                {'titulo2':('autor2','editora2','cidade2',2024,'paginas2','isbn2')},
+                {'titulo3':('autor3','editora3','cidade3',2001,'paginas3','isbn3')},
+                {'titulo4':('autor4','editora4','cidade4',2000,'paginas4','isbn4')},]
+
+print(bib(lista_livros))
