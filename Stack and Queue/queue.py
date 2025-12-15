@@ -25,15 +25,3 @@ class Queue:
 
     def empty(self):
         self.items = []
-
-
-q = Queue()
-q.enqueue(1)
-q.enqueue(2)
-q.enqueue(3)
-y = q.dequeue()
-print(y)
-z = q.dequeue()
-print(z)
-print(q.dequeue())
-print(q.dequeue())

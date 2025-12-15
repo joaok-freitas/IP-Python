@@ -16,7 +16,7 @@ class Stack:
 
     def peek(self):
         if self.size() > 0:
-            return self.items[0]
+            return self.items[-1]
         else:
             return None
 
@@ -25,21 +25,3 @@ class Stack:
 
     def empty(self):
         self.items = []
-
-
-q = Stack()
-q.push(1)
-q.push(2)
-q.push(3)
-q.push(5)
-print(q.items)
-q.pop()
-print(q.items)
-q.pop()
-print(q.items)
-q.pop()
-print(q.items)
-q.pop()
-print(q.items)
-q.pop()
-print(q.items)
